@@ -1,0 +1,34 @@
+POST http://localhost:4002/products
+Content-Type: application/json
+
+{
+  "title": "Butelie",
+  "description": "Buteliuta simpatica albastra cu pistrui",
+  "stock": 5,
+  "blocked": 2,
+  "active": true
+}
+
+###
+
+GET http://localhost:4002/products
+
+###
+
+GET http://localhost:4002/products/609fba5a2e2e977b7300768b
+
+###
+PUT  http://localhost:4002/products/609fba5a2e2e977b7300768b
+Content-Type: application/json
+
+{
+  "title": "Galagie",
+  "description": "Buteliuta simpatica albastra cu pistrui",
+  "stock": 10,
+  "blocked": 2,
+  "active": true
+}
+
+###
+
+DELETE http://localhost:4002/products/60a3aa58353cd2577452e815
